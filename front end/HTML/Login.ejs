@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/registration.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="../../images/eat it log.png" alt="">
+    </div>
+    <p class="section-tag">Login</p>
+    <div class="input-div">
+        <input placeholder="Email" type="text" class="input-fields">
+        <input placeholder="Password" type="password" class="input-fields">
+    </div>
+    <button class="login">LOGIN</button>
+    <p class="bottom-tag">Don't have an Account ?<a href="">Sign Up</a></p>
+</body>
+<script async>
+    var loginbtn = document.querySelector(".login")
+    loginbtn.addEventListener("click", ()=>{
+        loginbtn.classList.add("click")
+        setTimeout(() => {
+            loginbtn.classList.remove("click")
+        }, 1000);
+    })
+</script>
+</html>

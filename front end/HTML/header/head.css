@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding:0em;
+    margin:0em;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.eat-logo{
+    width:20%;
+    justify-items: center;
+}
+.ham{
+    width:15%;
+}
+.cartandham{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    justify-content: flex-end;
+    align-items: center;
+}
