@@ -1,5 +1,6 @@
 const express = require("express")
 const session = require("express-session")
+const PORT = process.env.PORT || 1122 
 var app = express();
 app.set('trust proxy', 1)
 app.use(session({
@@ -208,6 +209,6 @@ app.get("/cart/delete/:id", (req,res)=>{
 
 
 
-app.listen('3000', ()=>{
+app.listen(PORT, ()=>{
     console.log("listening to port 3000")
 })
