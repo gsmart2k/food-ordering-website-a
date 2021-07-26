@@ -2,7 +2,7 @@
   "name": "eatitweb",
   "version": "1.0.0",
   "description": "the backend program for a food ordering website",
-  "main": "index.js",
+  "main": "../backend/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm start"
