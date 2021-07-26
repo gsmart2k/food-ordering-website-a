@@ -1,6 +1,6 @@
 const express = require("express")
 const session = require("express-session")
-const PORT = process.env.PORT || 1122 
+
 var app = express();
 app.set('trust proxy', 1)
 app.use(session({
@@ -8,6 +8,8 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }))
+app.set('port', process.env.PORT || 3000);
+
 
 var uses = [
     {id:'1', name:"ogunrinade", password:"gbolahan", cartContent:[]},
